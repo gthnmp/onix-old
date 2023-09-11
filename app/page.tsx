@@ -110,7 +110,7 @@ const Reasons = () => (
 
 const NewProduct = () => {
   return(
-    <section className='w-full h-full pl-10 flex flex-col gap-32' >
+    <section className='w-full h-full pl-10 flex flex-col gap-16' >
       <h1 className="text-6xl font-semibold"> What&apos;s new </h1>
       <div className='w-full h-[200vh] flex'>
         <div className="w-3/5 h-full">
@@ -207,13 +207,108 @@ const NewProduct = () => {
   )
 }
 
+const MadeByOnix = () => {
+  return(
+    <section className='w-full h-full flex flex-col gap-16 text-black'  >
+      <h1 className="text-6xl font-semibold px-10"> Made by Onix </h1>
+      <ul className="w-full h-full grid grid-flow-col overflow-auto scroll-auto gap-x-8 px-10">
+        <li className='w-full h-full'>
+          <div className="h-max w-[25rem] flex flex-col gap-4">
+            <div className='w-full h-[35rem] bg-blue-500'>
+              <Image src={Senoparty} alt="gw" className="w-full h-full object-cover"/>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <div className='flex justify-between items-center text-2xl'>
+                <h1 className="font-medium"> Lorem ipsum dolor sit. </h1> 
+                <span className="font-normal text-lg"> IDR 99.000 </span>
+              </div>
+              <p className="text-neutral-500 text-xl ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. In vehicula nunc at semper. Aenean laoreet libero eget lorem viverra fermentum. Integer consequat posuere quam.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li className='w-full h-full'>
+          <div className="h-max w-[25rem] flex flex-col gap-4">
+            <div className='w-full h-[35rem] bg-blue-500'>
+              <Image src={Senoparty} alt="gw" className="w-full h-full object-cover"/>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <div className='flex justify-between items-center text-2xl'>
+                <h1 className="font-medium"> Lorem ipsum dolor sit. </h1> 
+                <span className="font-normal text-lg"> IDR 99.000 </span>
+              </div>
+              <p className="text-neutral-500 text-xl ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. In vehicula nunc at semper. Aenean laoreet libero eget lorem viverra fermentum. Integer consequat posuere quam.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li className='w-full h-full'>
+          <div className="h-max w-[25rem] flex flex-col gap-4">
+            <div className='w-full h-[35rem] bg-blue-500'>
+              <Image src={Senoparty} alt="gw" className="w-full h-full object-cover"/>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <div className='flex justify-between items-center text-2xl'>
+                <h1 className="font-medium"> Lorem ipsum dolor sit. </h1> 
+                <span className="font-normal text-lg"> IDR 99.000 </span>
+              </div>
+              <p className="text-neutral-500 text-xl ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. In vehicula nunc at semper. Aenean laoreet libero eget lorem viverra fermentum. Integer consequat posuere quam.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li className='w-full h-full'>
+          <div className="h-max w-[25rem] flex flex-col gap-4">
+            <div className='w-full h-[35rem] bg-blue-500'>
+              <Image src={Senoparty} alt="gw" className="w-full h-full object-cover"/>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <div className='flex justify-between items-center text-2xl'>
+                <h1 className="font-medium"> Lorem ipsum dolor sit. </h1> 
+                <span className="font-normal text-lg"> IDR 99.000 </span>
+              </div>
+              <p className="text-neutral-500 text-xl ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. In vehicula nunc at semper. Aenean laoreet libero eget lorem viverra fermentum. Integer consequat posuere quam.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li className='w-full h-full'>
+          <div className="h-max w-[25rem] flex flex-col gap-4">
+            <div className='w-full h-[35rem] bg-blue-500'>
+              <Image src={Senoparty} alt="gw" className="w-full h-full object-cover"/>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <div className='flex justify-between items-center text-2xl'>
+                <h1 className="font-medium"> Lorem ipsum dolor sit. </h1> 
+                <span className="font-normal text-lg"> IDR 99.000 </span>
+              </div>
+              <p className="text-neutral-500 text-xl ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. In vehicula nunc at semper. Aenean laoreet libero eget lorem viverra fermentum. Integer consequat posuere quam.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  )
+}
 
 export default function Home() {
   return (
-      <main className="w-full h-full flex flex-col gap-8 bg-white pb-16">
+      <main className="w-full h-full flex flex-col gap-32 bg-white pb-16">
         <Header />
         <BestProduct />
         <NewProduct />
+        <MadeByOnix />
         <Reasons />
       </main>
   )

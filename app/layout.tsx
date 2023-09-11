@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/assets/icon/logo.png" type="image/png" sizes='<generated>' />
       </head>
-      <body className={`${inter.className} bg-neutral-900`}>
+      <body className={`${inter.className} bg-neutral-900 overflow-x-hidden`}>
         <Navbar />
         {children}
       </body>
