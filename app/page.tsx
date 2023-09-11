@@ -108,14 +108,113 @@ const Reasons = () => (
   </div>
 )
 
+const NewProduct = () => {
+  return(
+    <section className='w-full h-full pl-10 flex flex-col gap-32' >
+      <h1 className="text-6xl font-semibold"> What&apos;s new </h1>
+      <div className='w-full h-[200vh] flex'>
+        <div className="w-3/5 h-full">
+          <ul className='h-full grid grid-cols-2 gap-y-16 auto-rows-max'>
+            <li className="w-80">
+              <div className='h-80 w-full bg-neutral-500'>
+                <Image src={Mexicola} alt="Mexicola" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex flex-col gap-8 pr-10">
+                <h1 className='font-semibold text-3xl'>Lorem ipsum dolor sit amet officia</h1>
+                <div className="flex gap-8 items-center font-medium text-lg">
+                  <div className="h-2 w-20 bg-black"/> 
+                  <span> Lorem ipsum dolor </span>
+                </div>
+                <p className='text-lg text-neutral-700'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut turpis vel urna rutrum tristique.
+                </p>
+              </div>
+            </li>
+            <li className="w-80">
+              <div className='h-80 w-full bg-neutral-500'>
+                <Image src={Fwb} alt="Mexicola" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex flex-col gap-8 pr-10">
+                <h1 className='font-semibold text-3xl'>Lorem ipsum dolor sit amet officia</h1>
+                <div className="flex gap-8 items-center font-medium text-lg">
+                  <div className="h-2 w-20 bg-black"/> 
+                  <span> Lorem ipsum dolor </span>
+                </div>
+                <p className='text-lg text-neutral-700'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut turpis vel urna rutrum tristique.
+                </p>
+              </div>
+            </li>
+            <li className="w-80">
+              <div className='h-80 w-full bg-neutral-500'>
+                <Image src={Senoparty} alt="Mexicola" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex flex-col gap-8 pr-10">
+                <h1 className='font-semibold text-3xl'>Lorem ipsum dolor sit amet officia</h1>
+                <div className="flex gap-8 items-center font-medium text-lg">
+                  <div className="h-2 w-20 bg-black"/> 
+                  <span> Lorem ipsum dolor </span>
+                </div>
+                <p className='text-lg text-neutral-700'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut turpis vel urna rutrum tristique.
+                </p>
+              </div>
+            </li>
+            <li className="w-80">
+              <div className='h-80 w-full bg-neutral-500'>
+                <Image src={Bento} alt="Mexicola" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex flex-col gap-8 pr-10">
+                <h1 className='font-semibold text-3xl'>Lorem ipsum dolor sit amet officia</h1>
+                <div className="flex gap-8 items-center font-medium text-lg">
+                  <div className="h-2 w-20 bg-black"/> 
+                  <span> Lorem ipsum dolor </span>
+                </div>
+                <p className='text-lg text-neutral-700'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut turpis vel urna rutrum tristique.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div className="w-2/5 h-full bg-black text-white pl-24 flex flex-col gap-32">
+          <div className='flex flex-col gap-16'>
+            <div className='h-[30rem] w-full bg-neutral-500'>
+              <Image src={Senoparty} alt="Mexicola" className="w-full h-full object-cover" />
+            </div>
+            <div className="flex flex-col gap-8 pr-10">
+              <h1 className='font-semibold text-4xl'>Floral Elegance with a Caramelic Twist </h1>
+              <div className="flex gap-8 items-center font-medium text-xl">
+                <div className="h-2 w-20 bg-white"/> 
+                <span> Our staff picks </span>
+              </div>
+              <p className='text-xl font-medium'>
+                Indulge in the enchanting blend of saffron, white florals, and amber with Senoparty's Eau de Parfum. A fragrant journey awaits.
+              </p>
+            </div>
+          </div>
+          <div className='flex flex-col gap-8 items-center pr-10'>
+            <h1 className='text-6xl font-semibold'> Join the circle </h1>
+            <span className="text-xl text-center"> Stay updated with our latest products, stories, and discounts </span>
+            <form className="flex gap-4">
+              <input type="email" placeholder='Email Address' className='text-white placeholder:text-white p-4  bg-transparent border-[1px] border-white'/>
+              <button className="bg-white text-black p-4"> Subscribe </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+
 export default function Home() {
   return (
-    <SmoothScroll>
       <main className="w-full h-full flex flex-col gap-8 bg-white pb-16">
         <Header />
         <BestProduct />
+        <NewProduct />
         <Reasons />
       </main>
-    </SmoothScroll>
   )
 }
