@@ -47,24 +47,24 @@ const StoreCard = ({product} : {product : ProductInfo}) => (
 )
 
 const Header = () => (
-  <header className="w-full h-96 flex flex-col gap-16 items-center justify-center">
+  <header className="w-full h-96 flex flex-col gap-24 items-center justify-center">
     <h1 className="text-6xl font-semibold">Fragrances</h1>
-    <ul className="flex font-normal text-2xl  w-1/2 justify-between items-center">
-      <li className="flex flex-col gap-4 items-center"> 
+    <ul className="flex font-normal text-2xl  w-full justify-between items-center relative">
+      <li className="flex flex-col gap-4 items-center absolute left-1/4 -translate-x-1/2"> 
         Look more spesific 
         <button className="font-semibold flex gap-4 items-center"> 
           All 
           <LuArrowUpDown />
         </button>
       </li>
-      <li className="flex flex-col gap-4 items-center"> 
+      <li className="flex flex-col gap-4 items-center absolute left-1/2 -translate-x-1/2"> 
         Narrow down
         <button className="font-semibold flex gap-4 items-center"> 
           Filter 
           <LuListFilter />
         </button>
       </li>
-      <li className="flex flex-col gap-4 items-center"> 
+      <li className="flex flex-col gap-4 items-center absolute left-3/4 -translate-x-1/2"> 
         Let us help!
         <button className="font-semibold flex gap-4 items-center"> 
           Search 
@@ -79,7 +79,7 @@ const Header = () => (
 export default function Page () {
   const content = listStructure.second
   return(
-    <div className="w-screen h-full bg-white">
+    <div className="w-screen h-full bg-white flex flex-col gap-16">
       <Header />
       <main className="w-full h-full flex flex-col gap-20 pb-40">
         <section className="w-full h-max px-10">
