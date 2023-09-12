@@ -24,6 +24,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-neutral-900 overflow-x-hidden`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )

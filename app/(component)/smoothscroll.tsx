@@ -2,12 +2,6 @@
 import React, { useState } from "react"
 import { useRef, useEffect, useContext, createContext } from "react";
 
-const scrollPositionContext = createContext(0)
-
-export const useScrollPosition = () => (
-  useContext(scrollPositionContext)
-)
-
 const SmoothScroll = ({children, className} : {children : React.ReactNode, className? : string}) => {
   const ref = useRef<HTMLDivElement>(null);
   const [scrollPercent, setScrollPercent] = useState(0)
@@ -72,11 +66,9 @@ const SmoothScroll = ({children, className} : {children : React.ReactNode, class
   }, []);
 
   return (
-    <scrollPositionContext.Provider value={scrollPercent}>
-      <div ref={ref} className={`wrapper z-40 fixed will-change-transform overflow-x-hidden ${className}`}>
-        {children}
-      </div>
-    </scrollPositionContext.Provider>
+    <div ref={ref} className={`wrapper z-40 fixed will-change-transform overflow-x-hidden ${className}`}>
+      {children}
+    </div>
   );
 }
 

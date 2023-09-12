@@ -1,0 +1,269 @@
+{
+  "fwb": {
+    "name": "FWB",
+    "price": 99000,
+    "volume": "30ml",
+    "BPOM": "NA18210600779",
+    "image":{
+      "src":"/assets/fragrances/fwb.webp",
+      "alt":"Picture of Onix FWB 30ml",
+      "dimension":{
+        "w":1200,
+        "h":1200
+      }
+
+    },
+    "description": {
+      "promotional": "Experience the zesty blend of bergamot and fruity florals, complemented by sweet ambery undertones in FWB perfume.",
+      "general": "Citrus fruity floral with sweet ambery notes",
+      "informational": {
+        "top_note": "Bergamot, Lemon, Orange, Apple, Green tea",
+        "middle_note": "Freesia, White Floral, Amber, Peach, Coconut",
+        "bottom_note": "Amber, Vetiver, Musk, Vanilla, Cedarwood, Caramel"
+      }
+    }
+  },
+  
+  "bento": {
+    "name": "Call Me Bento",
+    "price": 99000, 
+    "BPOM": "NA18220602092",
+    "volume":"30ml",
+    "image":{
+      "src":"/assets/fragrances/bento.webp",
+      "alt":"Picture of Onix Call Me Bento 30ml",
+      "dimension":{
+        "w":1200,
+        "h":1200
+      }
+
+    },
+    "description": {
+      "promotional": "Indulge in the harmonious blend of marigold, jasmine sambac, and amber benzoin in Onix Call Me Bento's fragrance.",
+      "general": "White floral notes on an ambery, woody, and musky base create a captivating scent.",
+      "informational": {
+        "top_note": "Marigold, Bergamot, Lemon, Prune, Tagete",
+        "middle_note": "Jasmine Sambac, Ylang, Rose, Coconut, Clove, Orange Flower",
+        "bottom_note": "Amber Benzoin, Musk, Vanilla, Cabreuva, Cedar"
+      }
+    }
+  },
+
+  "scorpio": {
+    "name": "Scorpio",
+    "price": 99000,
+    "volume": "30ml",
+    "BPOM": "NA18210600780",
+    "image":{
+      "src":"/assets/fragrances/scorpio.webp",
+      "alt":"Picture of Onix Scorpio 30ml",
+      "dimension":{
+        "w":1200,
+        "h":1200
+      }
+    },
+    "description": {
+      "promotional": "Seductive blend with pink pepper and jasmine, enhanced by coffee, vanilla, and cedarwood.",
+      "general": "Seductive blend with pink pepper and jasmine, enhanced by coffee, vanilla, and cedarwood.",
+      "informational": {
+        "top_note": "Pink Pepper, Orange Blossom",
+        "middle_note": "Jasmine, Coffee",
+        "bottom_note": "Vanilla, Patchouli, Cedarwood"
+      }
+    }
+  },
+  
+  "chillinBaby": {
+    "name": "Chillin' Baby",
+    "price": 99000,
+    "volume": "30ml",
+    "BPOM": "NA18210601057",
+    "image":{
+      "src":"/assets/fragrances/chilinbaby.webp",
+      "alt":"Picture of Onix Chillin' Baby 30ml",
+      "dimension":{
+        "w":1200,
+        "h":1200
+      }
+    },
+    "description": {
+      "promotional": "Delight in the Floral Fruity essence of ONIX CHILLIN’ BABY, featuring peach, melony, and a floral bouquet.",
+      "general": "Floral Fruity",
+      "informational": {
+        "top_note": "Peach, Apple, Melony",
+        "middle_note": "Floral bouquet of Mimosa, Tuberose, Freesia, Jasmine, and Ylang Ylang",
+        "bottom_note": "Sandalwood, Musk, Oakmoss"
+      }
+    }
+  },
+  
+  "senoparty": {
+    "name": "Senoparty",
+    "price": 99000, 
+    "volume": "30ml",
+    "BPOM": "NA18210601056",
+    "image":{
+      "src":"/assets/fragrances/senoparty.webp",
+      "alt":"Picture of Onix Senoparty 30ml",
+      "dimension":{
+        "w":1200,
+        "h":1200
+      }
+    },
+    "description": {
+      "promotional": "Experience the exquisite blend of saffron, oud, and amber with Senoparty's Eau de Parfum.",
+      "general": "Floral, herbal, caramelic, and ambery notes create a captivating fragrance.",
+      "informational": {
+        "top_note": "Saffron, Fir, Bergamot, Nagarmotha",
+        "middle_note": "Oud, White Floral, Tageta",
+        "bottom_note": "Amber, Musk, Caramel, Cedar, Moss"
+      }
+    }
+  },
+  
+  "mexicola": {
+    "name": "Mexicola",
+    "price": 99000, 
+    "volume": "30ml",
+    "BPOM": "NA18210601055",
+    "image":{
+      "src":"/assets/fragrances/mexicola.webp",
+      "alt":"Picture of Onix Mexicola 30ml",
+      "dimension":{
+        "w":1200,
+        "h":1200
+      }
+    },
+    "description": {
+      "promotional": "Indulge in the delightful blend of raspberry, jasmine, and sandalwood in ONIX MEXICOLA's Eau de Parfum.",
+      "general": "Sweet, fruity, floral, woody, and musky notes create an enchanting fragrance.",
+      "informational": {
+        "top_note": "Raspberry, Apple, Pineapple",
+        "middle_note": "Jasmine, Muguet, Cyclamen, Freesia",
+        "bottom_note": "Sandalwood, Coconut, Musk, Tonka, Vanilla, Caramel"
+      }
+    }
+  },
+  
+  "gratitude": {
+    "name": "Gratitude",
+    "price": 197000, 
+    "volume": "50ml",
+    "BPOM": "NA18220601509",
+    "image":{
+      "src":"/assets/fragrances/gratitude.webp",
+      "alt":"Picture of Onix Gratitude 50ml",
+      "dimension":{
+        "w":1200,
+        "h":1200
+      }
+    },
+    "description": {
+      "promotional": "Experience the harmonious blend of green, white florals, and musky warmth in Gratitude Eau De Parfum.",
+      "general": "Floral, sweet, with musky, ambery, and woody undertones.",
+      "informational": {
+        "top_note": "Green, Fruity, Ozone",
+        "middle_note": "White Floral, Caramel, Lactone, Violet",
+        "bottom_note": "Amber, Musk, Vanilla, Sandalwood, Cedarwood"
+      }
+    }
+  },
+  
+  "helena": {
+    "name": "Helena",
+    "price": 198000, 
+    "volume": "50ml",
+    "collaboration": "A collaboration by Onix & Bimo Pd",
+    "image":{
+      "src":"/assets/fragrances/helena.webp",
+      "alt":"Picture of Onix Helena 50ml",
+      "dimension":{
+        "w":1200,
+        "h":1200
+      }
+    },
+    "description": {
+      "promotional": "Experience the enchanting blend of lemon, violet, and amber in Helena Eau de Parfum, a collaboration by Onix & Bimo Pd.",
+      "general": "A captivating fragrance featuring top notes of lemon and gourmand, with a rich base of patchouli and dry wood.",
+      "informational": {
+        "top_note": "Lemon, Bergamot, Ozonic, Gourmand",
+        "middle_note": "Violet, Black Pepper, Pink Peppercorn, Cardamom",
+        "bottom_note": "Patchouli, Vetiver Haiti, Dry Wood, Amber"
+      }
+    }
+  },
+  
+  "senoparty-50ml": {
+    "name": "Senoparty",
+    "price": 199000, 
+    "volume": "30ml",
+    "BPOM": "NA18210601056", 
+    "image":{
+      "src":"/assets/fragrances/senoparty-50ml.webp",
+      "alt":"Picture of Onix Mexicola 50ml",
+      "dimension":{
+        "w":1200,
+        "h":1200
+      }
+    },
+    "description": {
+      "promotional": "Experience the exquisite blend of saffron, oud, and amber with Senoparty's Eau de Parfum.",
+      "general": "Floral, herbal, caramelic, and ambery notes create a captivating fragrance.",
+      "informational": {
+        "top_note": "Saffron, Fir, Bergamot, Nagarmotha",
+        "middle_note": "Oud, White Floral, Tageta",
+        "bottom_note": "Amber, Musk, Caramel, Cedar, Moss"
+      }
+    }
+  },
+  
+  "mexicola-50ml": {
+    "name": "Mexicola",
+    "price": 199000, 
+    "volume": "50ml",
+    "BPOM": "NA18210601055",
+    "image":{
+      "src":"/assets/fragrances/mexicola-50ml.webp",
+      "alt":"Picture of Onix Mexicola 50ml",
+      "dimension":{
+        "w":1200,
+        "h":1200
+      }
+
+    },
+    "description": {
+      "promotional": "Indulge in the delightful blend of raspberry, jasmine, and sandalwood in ONIX MEXICOLA's Eau de Parfum.",
+      "general": "Sweet, fruity, floral, woody, and musky notes create an enchanting fragrance.",
+      "informational": {
+        "top_note": "Raspberry, Apple, Pineapple",
+        "middle_note": "Jasmine, Muguet, Cyclamen, Freesia",
+        "bottom_note": "Sandalwood, Coconut, Musk, Tonka, Vanilla, Caramel"
+      }
+    }
+  },
+  
+  "fwb_50ml": {
+    "name": "FWB",
+    "price": 199000,
+    "volume": "50ml",
+    "BPOM": "NA18210600779",
+    "image":{
+      "src":"/assets/fragrances/fwb-50ml.webp",
+      "alt":"Picture of Onix FWB 50ml",
+      "dimension":{
+        "w":1200,
+        "h":1200
+      }
+
+    },
+    "description": {
+      "promotional": "Experience the zesty blend of bergamot and fruity florals, complemented by sweet ambery undertones in FWB perfume.",
+      "general": "Citrus fruity floral with sweet ambery notes",
+      "informational": {
+        "top_note": "Bergamot, Lemon, Orange, Apple, Green tea",
+        "middle_note": "Freesia, White Floral, Amber, Peach, Coconut",
+        "bottom_note": "Amber, Vetiver, Musk, Vanilla, Cedarwood, Caramel"
+      }
+    }
+  }
+}
