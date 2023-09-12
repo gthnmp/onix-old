@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="flex items-center">
         <ul className="hidden md:flex gap-8 ">
           <li>
-            <Link href="/">Collections</Link>
+            <Link href="/collections">Collections</Link>
           </li>
           <li>
             <Link href="/">Bestsellers</Link>

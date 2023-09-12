@@ -1,0 +1,156 @@
+import Image from 'next/image'
+import { LuArrowUpDown, LuListFilter, LuSearch } from 'react-icons/lu'
+import ProductCard from '../(component)/ProductCard' 
+import product_info from '@/app/products.json'
+import { ProductInfo } from '../(types)/types'
+import HelenaHeroImage from '@/public/assets/photography/helena-01.webp'
+import Link from 'next/link'
+
+const listStructure = {
+  first:[
+    product_info.fwb,
+    product_info.mexicola,
+    product_info.senoparty
+  ],
+  second:{
+    product : product_info.helena,
+    hero_image : HelenaHeroImage 
+  },
+  third:[
+    product_info.bento,
+    product_info.scorpio
+  ],
+  fourth:[
+    product_info.gratitude,
+    product_info.chillinBaby
+  ],
+  fifth: [
+    product_info.fwb_50ml,
+    product_info.mexicola_50ml,
+    product_info.senoparty_50ml
+  ]
+}
+
+const StoreCard = ({product} : {product : ProductInfo}) => (
+  <div className="w-full h-max flex flex-col gap-4">
+    <div className="w-full h-auto aspect-[3/4]">
+      <Image src={product.image.src} alt={"Kontol"} width={1200} height={1200} className='w-full h-full object-cover' />
+    </div>
+    <div className="flex flex-col gap-2">
+      <div className="flex justify-between font-medium">
+        <h1 className="text-2xl"> Onix {product.name} </h1>
+        <span> IDR {product.price}</span>
+      </div>
+      <p className="text-neutral-700 text-lg"> {product.description.promotional} </p>
+    </div>
+  </div>
+)
+
+const Header = () => (
+  <header className="w-full h-96 flex flex-col gap-16 items-center justify-center">
+    <h1 className="text-6xl font-semibold">Fragrances</h1>
+    <ul className="flex font-normal text-2xl  w-1/2 justify-between items-center">
+      <li className="flex flex-col gap-4 items-center"> 
+        Look more spesific 
+        <button className="font-semibold flex gap-4 items-center"> 
+          All 
+          <LuArrowUpDown />
+        </button>
+      </li>
+      <li className="flex flex-col gap-4 items-center"> 
+        Narrow down
+        <button className="font-semibold flex gap-4 items-center"> 
+          Filter 
+          <LuListFilter />
+        </button>
+      </li>
+      <li className="flex flex-col gap-4 items-center"> 
+        Let us help!
+        <button className="font-semibold flex gap-4 items-center"> 
+          Search 
+          <LuSearch />
+        </button>
+      </li>
+    </ul>
+  </header>
+)
+
+
+export default function Page () {
+  const content = listStructure.second
+  return(
+    <div className="w-screen h-full bg-white">
+      <Header />
+      <main className="w-full h-full flex flex-col gap-20 pb-40">
+        <section className="w-full h-max px-10">
+          <ul className='flex w-full justify-between'>
+            {
+              listStructure.first.map(product => (
+                <li className="w-[25rem]">
+                  <StoreCard product={product}/>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+        
+        <section className='w-full min-h-screen pr-10'>
+          <div className='w-full h-full flex '>
+            <div className="h-full w-1/2">
+              <Image src={content.hero_image} alt={"Kontol"} className='w-full h-full object-cover' />
+            </div>
+            <div className="h-full w-1/2 flex flex-col gap-4">
+              <div className="h-full w-full">
+                <Image src={content.product.image.src} alt={"Kontol"} width={1200} height={1200} className='w-full h-full object-cover' />
+              </div>
+              <div className="flex flex-col gap-2">
+                <div className="flex justify-between font-medium">
+                  <h1 className="text-2xl"> Onix {content.product.name} </h1>
+                  <span> IDR {content.product.price}</span>
+                </div>
+                <p className="text-neutral-700 text-lg"> {content.product.description.promotional} </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section className='w-full min-h-screen px-10'>
+          <ul className="flex justify-between">
+            <li className='w-[25rem]'>
+              <StoreCard product={listStructure.third[0]} />
+            </li>
+            <li className="w-[25rem] h-[30rem] flex flex-col justify-center items-center gap-8">
+              <h1 className="text-6xl font-semibold text-center"> Never Lasting Scent </h1>
+            </li>
+            <li className="w-[25rem]">
+              <StoreCard product={listStructure.third[1]} />
+            </li>
+          </ul>
+        </section>
+
+        <section className='w-full min-h-screen px-10'>
+          <ul className="flex justify-around">
+            <li className='w-[30rem]'>
+              <StoreCard product={listStructure.fourth[0]} />
+            </li>
+            <li className="w-[30rem]">
+              <StoreCard product={listStructure.fourth[1]} />
+            </li>
+          </ul>
+        </section>
+
+        <section className="w-full h-max px-10">
+          <ul className='flex w-full justify-between'>
+            {
+              listStructure.fifth.map(product => (
+                <li className="w-[25rem]">
+                  <StoreCard product={product}/>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      </main>
+    </div>
+  )
+}

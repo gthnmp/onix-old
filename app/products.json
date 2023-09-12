@@ -193,7 +193,7 @@
     }
   },
   
-  "senoparty-50ml": {
+  "senoparty_50ml": {
     "name": "Senoparty",
     "price": 199000, 
     "volume": "30ml",
@@ -217,7 +217,7 @@
     }
   },
   
-  "mexicola-50ml": {
+  "mexicola_50ml": {
     "name": "Mexicola",
     "price": 199000, 
     "volume": "50ml",
