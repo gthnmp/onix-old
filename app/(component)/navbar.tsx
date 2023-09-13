@@ -17,10 +17,10 @@ const Navbar = () => {
             <Link href="/collections">Collections</Link>
           </li>
           <li>
-            <Link href="/">Bestsellers</Link>
+            <Link href="/bestseller">Bestsellers</Link>
           </li>
          <li>
-            <Link href="/">Journal</Link>
+            <Link href="/journal">Journal</Link>
           </li>
         </ul>
         <GiHamburgerMenu className="md:hidden"/>
@@ -36,7 +36,7 @@ const Navbar = () => {
             <Link onClick={() => setSearchState(true)} href="/"><BsSearch /></Link>
           </li>
           <li>
-            <Link href="/">About</Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
             <Link href="/">Support</Link>

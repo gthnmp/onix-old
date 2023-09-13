@@ -6,8 +6,8 @@ const Footer = () => {
   return(
     <footer className="w-screen h-96 bg-neutral-900 text-white flex flex-col items-center justify-center gap-16 px-12 py-10">
       <div className="flex flex-col gap-16 items-center">
-        <h2 className="text-2xl font-normal tracking-wider"> ONIX Fragrance Indonesia </h2>
-        <h1 className="text-6xl font-medium tracking-wide"> Boost your day </h1>
+        <h2 className="text-2xl font-normal tracking-wider"> ONIX Fragrance ─ Boost your day </h2>
+        <h1 className="text-6xl font-medium tracking-wide"> Seulawah Raya No. 3, Jakarta </h1>
       </div>
       <div className="flex justify-between w-full relative">
         <ul className="flex gap-12 h-10 items-center absolute left-10">
