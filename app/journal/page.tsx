@@ -102,6 +102,7 @@ export default function Page () {
       <main className="w-full h-max flex flex-col gap-32">
       <section className='w-full h-max flex'>
         <div className="w-2/5 bg-black min-h-screen">
+          
         </div>
         <div className="w-3/5 h-max px-10 grid grid-cols-2 gap-y-16 auto-rows-max">
           {
