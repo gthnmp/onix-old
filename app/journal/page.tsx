@@ -4,6 +4,7 @@ import { ProductInfo } from '../(types)/types'
 import Senoparty from '@/public/assets/photography/senoparty-01.webp'
 import Fwb from '@/public/assets/photography/mexicola-fwb-01.webp'
 import Helena from '@/public/assets/photography/helena-01.webp'
+import { Metadata } from 'next'
 
 interface JournalCardProps {
   title : string;
@@ -95,7 +96,16 @@ const JournalCard = ({journal} : {journal : JournalCardProps}) => {
   )
 }
 
-export default function Page () {
+export const metadata: Metadata = {
+  title : 'Journal - ONIX',
+  description : 'Discover Onix Fragrance Indonesian - Your source for affordable and long-lasting fragrances based in Bandung. Trusted by celebrities. Boost your day with our elegant scents.',
+  keywords:'Onix Fragrance Indonesia, Onix Fragrance, Indonesian fragrances, affordable scents, long-lasting perfumes, Bandung store, celebrity-endorsed fragrances, trusted fragrance',
+  viewport:'width=device-width, initial-scale=1',
+  creator:'Gathan Mahesa',
+  colorScheme:'light',
+}
+
+export default async function Home() {
   return(
     <div className="w-screen h-full bg-white flex flex-col gap-16 pb-40">
       <Header />

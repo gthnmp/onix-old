@@ -1,21 +1,28 @@
-
 import Image from 'next/image'
+import { Metadata } from 'next';
+
 import Header from './(component)/Header';
 import BestProduct from './(component)/BestProduct';
 import NewProduct from './(component)/NewProduct';
 import MadeByOnix from './(component)/MadeByOnix';
-
 import { ProductInfo } from './(types)/types';
-
 import OnixLogo from '@/public/assets/icon/logo.png';
 import product_info from './products.json'
-
 
 const headlineProducts: ProductInfo[] = [product_info.fwb, product_info.senoparty, product_info.mexicola]
 const highlightProducts: ProductInfo[] = [product_info.bento]
 const newProducts: ProductInfo[] = [product_info.helena, product_info.gratitude, product_info.bento, product_info.scorpio]
 const madeByOnix: ProductInfo[] = Object.values(product_info);
 const reverseMadeByOnix: ProductInfo[] = madeByOnix.slice().reverse();
+
+export const metadata: Metadata = {
+  title : 'ONIX Fragrance - Boost your day',
+  description : 'Discover Onix Fragrance Indonesian - Your source for affordable and long-lasting fragrances based in Bandung. Trusted by celebrities. Boost your day with our elegant scents.',
+  keywords:'Onix Fragrance Indonesia, Onix Fragrance, Indonesian fragrances, affordable scents, long-lasting perfumes, Bandung store, celebrity-endorsed fragrances, trusted fragrance',
+  viewport:'width=device-width, initial-scale=1',
+  creator:'Gathan Mahesa',
+  colorScheme:'light',
+}
 
 const Reasons = () => (
   <div className='w-screen h-40 flex flex-col gap-10 p-10 items-center justify-center'>
@@ -51,7 +58,8 @@ const Reasons = () => (
   </div>
 )
 
-export default function Home() {
+
+export default async function Home() {
   return (
     <main className="w-full h-full flex flex-col gap-32 bg-white pb-16">
       <Header items={headlineProducts} />

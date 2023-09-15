@@ -1,7 +1,6 @@
 import { ProductInfo } from "../(types)/types";
 import Image from "next/image";
 
-
 const Header = ({items} : {items : ProductInfo[]}) => {
   return (
     <header className="w-screen h-96 bg-neutral-900 text-white py-10 px-10 flex justify-around uppercase">

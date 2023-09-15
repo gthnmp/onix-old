@@ -1,8 +1,19 @@
 import HeroImageStore from '@/public/assets/photography/store.webp'
 import Image from 'next/image'
 import {BiSolidRightArrow} from 'react-icons/bi'
+import { Metadata } from 'next'
 
-export default function Page () {
+export const metadata: Metadata = {
+  title : 'Onix Fragrance Indonesia',
+  description : 'Discover Onix Fragrance Indonesian - Your source for affordable and long-lasting fragrances based in Bandung. Trusted by celebrities. Boost your day with our elegant scents.',
+  keywords:'Onix Fragrance Indonesia, Onix Fragrance, Indonesian fragrances, affordable scents, long-lasting perfumes, Bandung store, celebrity-endorsed fragrances, trusted fragrance',
+  viewport:'width=device-width, initial-scale=1',
+  creator:'Gathan Mahesa',
+  colorScheme:'light',
+}
+
+
+export default async function Page () {
   return(
     <div className="w-screen min-h-screen bg-white flex flex-col gap-32">
       <header className="w-full h-max flex">

@@ -1,4 +1,5 @@
 import {BsSearch} from 'react-icons/bs'
+import { Metadata } from 'next'
 
 const support = {
   contact : [
@@ -19,7 +20,16 @@ const support = {
   ]
 }
 
-export default function Page () {
+export const metadata: Metadata = {
+  title : 'Customer Service - ONIX',
+  description : 'Discover Onix Fragrance Indonesian - Your source for affordable and long-lasting fragrances based in Bandung. Trusted by celebrities. Boost your day with our elegant scents.',
+  keywords:'Onix Fragrance Indonesia, Onix Fragrance, Indonesian fragrances, affordable scents, long-lasting perfumes, Bandung store, celebrity-endorsed fragrances, trusted fragrance',
+  viewport:'width=device-width, initial-scale=1',
+  creator:'Gathan Mahesa',
+  colorScheme:'light',
+}
+
+export default async function Page () {
   return(
     <div className="w-screen h-full bg-white">
       <header className="w-full h-96 bg-neutral-900 text-white grid place-items-center ">

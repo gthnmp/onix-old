@@ -1,10 +1,9 @@
 import Image from 'next/image'
 import { LuArrowUpDown, LuListFilter, LuSearch } from 'react-icons/lu'
-import ProductCard from '../(component)/ProductCard' 
 import product_info from '@/app/products.json'
 import { ProductInfo } from '../(types)/types'
 import HelenaHeroImage from '@/public/assets/photography/helena-01.webp'
-import Link from 'next/link'
+import { Metadata } from 'next'
 
 const listStructure = {
   first:[
@@ -76,7 +75,16 @@ const Header = () => (
 )
 
 
-export default function Page () {
+export const metadata: Metadata = {
+  title : 'Best Selling - ONIX',
+  description : 'Discover Onix Fragrance Indonesian - Your source for affordable and long-lasting fragrances based in Bandung. Trusted by celebrities. Boost your day with our elegant scents.',
+  keywords:'Onix Fragrance Indonesia, Onix Fragrance, Indonesian fragrances, affordable scents, long-lasting perfumes, Bandung store, celebrity-endorsed fragrances, trusted fragrance',
+  viewport:'width=device-width, initial-scale=1',
+  creator:'Gathan Mahesa',
+  colorScheme:'light',
+}
+
+export default async function Page () {
   const content = listStructure.second
   return(
     <div className="w-screen h-full bg-white flex flex-col gap-16">
