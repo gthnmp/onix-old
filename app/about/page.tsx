@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default async function Page () {
   return(
-    <div className="w-screen min-h-screen bg-white flex flex-col gap-32">
+    <div className="w-screen min-h-screen bg-white flex flex-col gap-32 pb-16">
       <header className="w-full h-max flex">
         <div className="w-3/5 bg-black h-screen">
           <Image src={HeroImageStore} alt="Photography of Onix Official Store" className="w-full h-full object-cover" />
@@ -62,7 +62,7 @@ export default async function Page () {
             <Image src={HeroImageStore} alt="Store" className="w-full h-full object-cover" />
           </div>
 
-          <div className="col-start-2 col-end-6 row-start-5 row-span-1 w-full h-full pt-8">
+          <div className="col-start-2 col-end-6 row-start-5 row-span-1 w-full h-full pt-32">
             <p className="text-2xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
