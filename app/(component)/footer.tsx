@@ -4,54 +4,62 @@ import { BiLogoTiktok } from 'react-icons/bi'
 
 const Footer = () => {
   return(
-    <footer className="w-screen h-96 bg-neutral-900 text-white flex flex-col items-center justify-center gap-16 px-12 py-10">
-      <div className="flex flex-col gap-16 items-center">
-        <h2 className="text-2xl font-normal tracking-wider"> ONIX Fragrance ─ Boost your day </h2>
-        <h1 className="text-6xl font-medium tracking-wide"> Seulawah Raya No. 3, Jakarta </h1>
-      </div>
-      <div className="flex justify-between w-full relative">
-        <ul className="flex gap-12 h-10 items-center absolute left-10">
-          <li>
-            <Link target='_blank' href="https://www.instagram.com/onix.id/"><AiOutlineInstagram className="scale-125"/></Link>
-          </li>
-          <li>
-            <Link target='_blank' href="https://twitter.com/onix_indonesia"><AiOutlineTwitter className="scale-125"/></Link>
-          </li>
-          <li>
-            <Link target='_blank' href="https://www.tiktok.com/@onix.fragrance"><BiLogoTiktok className="scale-125"/></Link>
-          </li>
-          <li>
-            <Link target='_blank' href="https://www.facebook.com/p/onixid-100064900355452/"><AiFillFacebook className="scale-125"/></Link>
-          </li>
-        </ul>
+   <footer className="bg-black w-screen min-h-[30rem] flex flex-col gap-16 px-16 py-16 text-white">
+      
+      <div className="w-full h-full grid grid-cols-5 grid-rows-[8rem_1fr] gap-x-8">
+        <div className="flex flex-col text-xl">
+          <h1 className="font-light tracking-wide">Onix Fragrance</h1>
+          <h2 className="font-medium text-sm text-neutral-400">Boost your day</h2>
+        </div>
+        <div className="border-[1px] border-white w-full h-max py-3 grid place-items-center rounded-md">
+          <Link target='_blank' href="https://www.tokopedia.com/onixofc">Tokopedia</Link>
+        </div>
+        <div className="border-[1px] border-white w-full h-max py-3 grid place-items-center rounded-md">
+          <Link target='_blank' href="https://shopee.co.id/onix.id">Shopee</Link>
+        </div>
+        <div className="border-[1px] border-white w-full h-max py-3 grid place-items-center rounded-md">
+          <Link target='_blank' href="https://www.tiktok.com/@onix.fragrance">TikTok Shop</Link>
+        </div>
+        <div className="border-[1px] border-white w-full h-max py-3 grid place-items-center rounded-md">
+          <Link target='_blank' href="https://www.lazada.co.id/shop/onix-fragrance">Lazada</Link>
+        </div>
         
-        <ul className="flex gap-12 h-10 items-center absolute left-1/2 -translate-x-1/2">
-          <li>
-            <Link href="/">Contact</Link>
-          </li>
-          <li>
-            <Link href="/">Terms</Link>
-          </li>
-          <li>
-            <Link href="/">Privacy</Link>
-          </li>
-          <li>
-            <Link href="/">Opening Hour</Link>
-          </li>
-        </ul>
+        <div className="flex flex-col gap-2">
+          <h1 className="font-semibold"> Follow us </h1>
+          <ul className="flex flex-col gap-2">
+            <li>
+              <Link className="flex items-center gap-2" target='_blank' href="https://www.instagram.com/onix.id/"><AiOutlineInstagram className="scale-125"/> Instagram </Link>
+            </li>
+            <li>
+              <Link className="flex items-center gap-2" target='_blank' href="https://twitter.com/onix_indonesia"><AiOutlineTwitter className="scale-125"/> Twitter </Link>
+            </li>
+            <li>
+              <Link className="flex items-center gap-2" target='_blank' href="https://www.tiktok.com/@onix.fragrance"><BiLogoTiktok className="scale-125"/> TikTok</Link>
+            </li>
+            <li>
+              <Link className="flex items-center gap-2" target='_blank' href="https://www.facebook.com/p/onixid-100064900355452/"><AiFillFacebook className="scale-125"/> Facebook</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h1 className="font-semibold"> About us </h1>
+          <ul className="flex flex-col gap-2">
+            <li> Onix Fragrace Indonesia </li>
+            <li> Parters and Collaboration </li>
+            <li> Vacancies and Internship </li>
+            <li> Contact Us </li>
+          </ul>
+        </div>
         
-        <ul className="flex gap-12 h-10 items-center absolute right-10 opacity-60">
-          <li>
-            <Link href="/">Tokopedia</Link>
-          </li>
-          <li>
-            <Link href="/">Shopee</Link>
-          </li>
-          <li>
-            <Link href="/">TikTok Shop</Link>
-          </li>
-        </ul>
       </div>
+      
+      <ul className="flex gap-8 text-neutral-400 text-sm">
+        <li>© 2023 Gathan Mahesa</li>
+        <li>Cookie Declaration</li>
+        <li>Privacy Statement</li>
+        <li>Disclaimer</li>
+      </ul>
+      
     </footer>
   )
 }
