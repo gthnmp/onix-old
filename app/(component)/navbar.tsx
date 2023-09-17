@@ -10,7 +10,7 @@ const Navbar = () => {
   const [searchActive, setSearchState] = useState(false)
   
   return(
-    <nav className="sticky top-0 z-50 bg-white w-screen h-20 flex justify-between items-center px-16 uppercase text-sm font-normal select-none">
+    <nav className="fixed top-0 z-50 bg-white w-screen h-20 flex justify-between items-center px-16 uppercase text-sm font-normal select-none">
       <div className="flex items-center">
         <ul className="hidden md:flex gap-8 ">
           <li>
@@ -26,7 +26,7 @@ const Navbar = () => {
         <GiHamburgerMenu className="md:hidden"/>
       </div>
       
-      <Link href="/" className="h-full w-auto p-4">
+      <Link href="/" className="h-full w-auto p-4 absolute left-1/2 -translate-x-1/2">
         <Image draggable={false} src = {BrandLogo} alt="Logo of Onix Fragrance" className="w-full h-full object-cover"/>
       </Link>
 
