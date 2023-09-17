@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/assets/icon/logo.png" type="image/png" sizes='<generated>' />
+        <link rel="icon" href="/assets/icon/Onix-logo-white.png" type="image/png" sizes='<generated>' />
       </head>
       <body className={`${inter.className} bg-neutral-900 overflow-x-hidden`}>
         <Navbar />
