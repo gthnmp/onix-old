@@ -6,6 +6,7 @@ import { ProductInfo } from '../(types)/types'
 import HelenaHeroImage from '@/public/assets/photography/helena-01.webp'
 
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 const listStructure = {
   first:[
@@ -96,7 +97,9 @@ export default async function Page () {
             {
               listStructure.first.map(product => (
                 <li className="w-[25rem]">
-                  <StoreCard product={product}/>
+                  <Link href={`/collections/${product.name}`}>
+                    <StoreCard product={product}/>
+                  </Link>
                 </li>
               ))
             }
